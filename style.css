@@ -1,0 +1,56 @@
+body{
+    overflow-x: hidden;
+   
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+}
+nav{
+    width: 700px;
+    display: flex;
+    align-items:center ;
+    position: absolute;
+    right: 0;
+    
+}
+nav>ul{
+    list-style: none;
+}
+nav>ul>li{
+    display: inline;
+    padding: 10px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: relative;
+    
+}
+header>img{
+    width: 40px;
+    position: relative;
+    margin-left: 10px;
+}
+header{
+    height: 50px;
+    align-items: center;
+}
+nav>button{
+    width: 150px;
+    height: 25px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+    
+    
+    
+}
