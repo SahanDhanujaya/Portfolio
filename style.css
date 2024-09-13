@@ -10,6 +10,8 @@ header {
     display: grid;
     grid-template-columns: repeat(12,1fr);
     z-index: 1;
+    height: 50px;
+    align-items: center;
     
 }
 
@@ -33,7 +35,7 @@ nav>ul>li {
 
 nav>ul>li>a {
     text-decoration: none;
-    color: black;
+    color: #262B2F;
     font-weight: bold;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -46,15 +48,6 @@ header>img {
     width: 40px;
     margin-left: 10px;
     grid-column: 1;
-}
-
-header {
-    height: 50px;
-    align-items: center;
-}
-nav{
-   
-    
 }
 nav>button {
     width: 150px;
@@ -70,32 +63,41 @@ hero{
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(3,1fr);
     height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
 }
 hero>section:nth-child(1){
-    margin-top: 50px;
+  
     grid-column: 2/8;
     grid-row: 2;
 }
 .myPicture{
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 415px;
     border-radius: 100%;
-    background-color: black;
-    grid-column: 7;
+    background-color: #262B2F;
+    grid-column: 8;
     grid-row: 2;
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
+
 }
 .myPicture>img{
-    width:800px;
-    position: relative;
-    bottom: 30px;
+    width:700px;
+    
        
 }
 hero>section>.content>h1{
     margin: 0;
-    font-size: 70px;
+    font-size: 80px;
+    color: rgb(180, 180, 180);
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 hero>section>.content>h3{
     margin: 0;
@@ -103,9 +105,38 @@ hero>section>.content>h3{
 }
 hero>section>.content>h4{
     margin: 0;
-    font-size:40px;
+    font-size:35px;
+    color: #99AEF5;
+    text-shadow: 3px 3px 4px rgb(83, 83, 83) ;
 }
 hero>section>.content>p{
     margin: 0;
     font-size: 20px;
+    color: #262B2F;
+}
+hero>section>div:nth-child(1)>div>button{
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    margin-right: 10px;
+}
+hero>section>div:nth-child(1)>div>button:nth-child(1){
+    background-color: #262B2F;
+    color: white;
+    
+}
+hero>section>.content>p>a{
+    color: #262B2F;
+}
+hero>section>div:nth-child(1)>div>button:nth-child(2){
+    border:2px solid #262B2F;
+    background: white;
+    color: #262B2F;
+    
+}
+hero>section>div:nth-child(1)>div>a>i{
+    color: #262B2F;
+    height: 100px;
 }
