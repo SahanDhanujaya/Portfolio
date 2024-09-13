@@ -60,43 +60,44 @@ nav>button {
 }
 hero{
     display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(3,1fr);
-    height: 100vh;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(4,1fr);
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: bold;
 }
 hero>section:nth-child(1){
-  
-    grid-column: 2/8;
-    grid-row: 2;
+    margin-top: 80px;
+    grid-column: 2/9;
+    grid-row: 1/4;
+    z-index: 2;
+    margin-left: 20px;
 }
 .myPicture{
     width: 600px;
     height: 415px;
     border-radius: 100%;
-    background-color: #262B2F;
-    grid-column: 8;
-    grid-row: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    grid-column: 8/9;
+    grid-row: 1/4;
+    margin-top: 40px;
+    margin-left:80px ;
+    z-index: 1;
 }
 .myPicture>img{
     width:700px;
-    
+    margin-bottom: 50px;
+    border-radius: 100%;
+    background-color: #262B2F;
+    box-shadow: 3px  4px 11px  10px rgb(200, 200, 200);
        
 }
 hero>section>.content>h1{
     margin: 0;
-    font-size: 80px;
+    font-size: 85px;
     color: rgb(180, 180, 180);
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: bold;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 800;
     font-style: normal;
 }
 hero>section>.content>h3{
@@ -136,7 +137,19 @@ hero>section>div:nth-child(1)>div>button:nth-child(2){
     color: #262B2F;
     
 }
+hero>section>div:nth-child(1)>div>a{
+    height: 100px;
+}
 hero>section>div:nth-child(1)>div>a>i{
     color: #262B2F;
-    height: 100px;
+    
+}
+
+.aboutMe{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows:repeat(3,1fr) ;
+}
+.aboutMe>img{
+    width: 500px;
 }
