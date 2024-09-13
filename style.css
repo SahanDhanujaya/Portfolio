@@ -1,28 +1,37 @@
-body{
+body {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-   
-}
-header{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
     position: relative;
+
 }
-nav{
-    width: 700px;
-    display: flex;
-    align-items:center ;
-    position: absolute;
-    right: 0;
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    z-index: 1;
     
 }
-nav>ul{
-    list-style: none;
+
+nav {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    
+
 }
-nav>ul>li{
+
+nav>ul {
+    list-style: none;
+    
+}
+
+nav>ul>li {
     display: inline;
     padding: 10px;
 }
-nav>ul>li>a{
+
+nav>ul>li>a {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -30,27 +39,71 @@ nav>ul>li>a{
     font-optical-sizing: auto;
     font-style: normal;
     position: relative;
-    
+
 }
-header>img{
+
+header>img {
     width: 40px;
-    position: relative;
     margin-left: 10px;
 }
-header{
+
+header {
     height: 50px;
     align-items: center;
 }
-nav>button{
+nav{
+   
+    
+}
+nav>button {
     width: 150px;
     height: 25px;
     background-color: lightgreen;
     border: none;
     border-radius: 10px;
     font-weight: bold;
-    position: relative;
-    left: 10px;
+    margin-left: 10px;
+}
+hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    
+}
+hero>section:nth-child(1)>.content{
+   
+}
+hero>section:nth-child(1)>.content>h1{
+    margin: 0;
+    font-size: 70px;
+}
+hero>section:nth-child(1)>.content>h3{
+    margin: 0;
+    font-size: 50px;
+}
+hero>section:nth-child(1)>.content>h4{
+    margin: 0;
+    font-size: 35px;
+}
+hero>section:nth-child(1)>{
+  
+
+}
+
+hero>section:nth-child(2)>img{
+    width: 700px;
     
     
+    
+}
+.heroPicture{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-radius: 100%;
+  
     
 }
