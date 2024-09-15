@@ -16,6 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -47,25 +49,29 @@
                     <a href="mailto:sahandanujaya48@gmail.com">sahandanujaya48@gmail.com</a>
                 </p>
                 <!--contact information-->
-            <div>
-                <button type="button">Hire Me</button><button type="button">Contact Me</button><br>
-                <a href="https://github.com/SahanDhanujaya"><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <div>
+                    <button type="button">Hire Me</button><button type="button">Contact Me</button><br>
+                    <a href="https://github.com/SahanDhanujaya"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
-            </div>   
         </section>
         <!--my picture-->
         <section class="myPicture">
             <img src="assets/img/freepik-export-202407250258128R4p.png" alt="My picture">
         </section>
     </hero>
+    <hr>
     <!--about me-->
     <main class="aboutMe">
-        <h1>About Me</h1>
+        <section>
+            <h1 >About Me</h1>
+        </section>
         <!--profile picture-->
-        <img src="assets/img/young-man-green-shirt-wearing-glasses-standing-sideways-with-smile-face-white-wall.png"
+        <img data-aos="zoom-in"
+            src="assets/img/young-man-green-shirt-wearing-glasses-standing-sideways-with-smile-face-white-wall.png"
             alt="Profile picture">
         <!--detail section-->
         <section>
@@ -383,6 +389,10 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
