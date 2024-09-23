@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+
 body{
     overflow-x: hidden;
 }
@@ -148,7 +149,7 @@ hero>section>div:nth-child(1)>div>a>i{
     
 }
 .aboutMe{
-    
+    height: 100vh;
 }
 .aboutMe>section{
     display: grid;
@@ -241,3 +242,38 @@ hero>section>div:nth-child(1)>div>a>i{
     font-style: normal;
 
 }
+#skill>h1{
+    margin-left: 100px;
+    width: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    position: relative;
+    
+}
+#skill>main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#skill>main>section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 60px;
+    row-gap: 4%;
+    
+    
+}
+#skill>main>section>.card{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#skill>main>section>.card>div:first-child>img{
+    width: 250px;
+}
+
