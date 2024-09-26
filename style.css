@@ -50,7 +50,6 @@ nav>ul>li>a {
 header>img {
     width: 40px;
     margin-left: 10px;
-    grid-column: 1;
 }
 nav>button {
     width: 150px;
@@ -97,7 +96,7 @@ hero>section:nth-child(1){
 }
 hero>section>.content>h1{
     margin: 0;
-    font-size: 85px;
+    font-size: 5rem;
     color: rgb(180, 180, 180);
     font-family: "Caveat Brush", cursive;
     font-weight: 800;
@@ -149,8 +148,9 @@ hero>section>div:nth-child(1)>div>a>i{
     
 }
 .aboutMe{
-    height: 100vh;
+    
 }
+
 .aboutMe>section{
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -166,21 +166,17 @@ hero>section>div:nth-child(1)>div>a>i{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: italic;
-    position: relative;
+
 
 }
 .aboutMe>div{
     display: grid;
     grid-template-columns: repeat(9,1fr);
-    grid-template-rows: repeat(4,1fr);
-    height: 100vh;
-
+    margin-top: 5%;
 }
 .aboutMe img{
     width: 600px;
     border-radius: 100%;
-    position: relative;
-    right: 50px;
     background-color: #262B2F;
     grid-column: 1/5;
     grid-row: 2/3;
@@ -242,38 +238,65 @@ hero>section>div:nth-child(1)>div>a>i{
     font-style: normal;
 
 }
-#skill>h1{
+#skill{
+    position: static;
+
+}
+#skill>section{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    color: #262B2F;
+    text-align: start;
+    
+    
+}
+#skill>section>h1{
+    margin: 0;
+    margin-top: 20%;
     margin-left: 100px;
+    padding: 0;
     width: 200px;
     font-size: 40px;
     font-weight: bold;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: italic;
-    position: relative;
+
     
 }
 #skill>main{
+    margin-top: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
+    
 }
 #skill>main>section{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 60px;
-    row-gap: 4%;
+    grid-gap: 0 0;
     
+      
     
 }
 #skill>main>section>.card{
+    margin: 10px;
+    box-sizing: content-box;
     width: 250px;
-    height: 250px;
+    height: 200px;
     border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    font-size: 13px;
+    background-color: #262B2F;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
 }
 #skill>main>section>.card>div:first-child>img{
     width: 250px;
+    height: 120px;
 }
 
