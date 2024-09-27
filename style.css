@@ -320,19 +320,34 @@ hero>section>div:nth-child(1)>div>a>i{
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
     
 }
 #education>#main>#eduDetails{
-    border: 2px solid black;
+    padding: 5px;
     width: 300px;
-    height: 450px;
+    height: fit-content;
     margin: 5px;
     color: white;
     background-color: #262B2F;
+    border-radius: 10px;
+    box-shadow: -10px 10px 10px rgb(98, 98, 98);
+
+}
+#education>#main>#eduDetails>div>h3{
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-top: 2%;
+    color: rgb(197, 197, 197);
+}
+#education>#main>#eduDetails>div>p{
+    font-size: 1rem;
+    width: 270px;
+    align-content: center;
 }
 #education>#main>img{
     width: 300px;
-    height: 450px;
+    height: 550px;
     margin: 5px;
 
 }
