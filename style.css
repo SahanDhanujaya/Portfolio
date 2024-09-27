@@ -502,6 +502,19 @@ hero>section>div:nth-child(1)>div>a>i{
     width: 120px;
     margin-left: 19%;
 }
+#gallery{
+    margin-top: 100px;
+}
+#gallery>h1{
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
 
 
 
