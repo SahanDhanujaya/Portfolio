@@ -419,5 +419,15 @@ hero>section>div:nth-child(1)>div>a>i{
 #assignment>section>#card2>div>button{
     margin-top: 35%;
 }
+#assignment>button{
+    margin-top: 50px;
+    margin-left: 200px;
+    border-radius: 10px ;
+    background-color:white;
+    border:2px solid #262B2F;
+    width: 130px;
+    height: 25px;
+
+}
 
 
