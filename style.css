@@ -391,5 +391,33 @@ hero>section>div:nth-child(1)>div>a>i{
     width: 300px;
     height: 180px;
 }
+#assignment>section>button{
+    border-radius: 100%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: #262B2F;
+    border-style: none;
+}
+#assignment>section>button>i{
+    color: white;
+}
+#assignment>section>.card>.btn{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#assignment>section>.card>div>button{
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #262B2F;
+    color: white;
+    width: 50%;
+    height: 40%;
+    font-size: 12px;
+}
+#assignment>section>#card2>div>button{
+    margin-top: 35%;
+}
 
 
