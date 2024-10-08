@@ -570,6 +570,33 @@ hero>section>div:nth-child(1)>div>a>i{
 #gallery .activity>div>p{
     margin: 50px;
 }
+.hireMe>section{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.hireMe>section>div:nth-child(1){
+    border:  2px solid black ;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+.hireMe>section>div:nth-child(1)>form{
+    border: 1px solid ;
+    height: fit-content;
+    padding: 10px;
+}
+.hireMe>section>div:nth-child(1)>form input{
+    width: 450px;
+    height: 30px;
+}
+.hireMe>section>div:nth-child(1)>form textarea{
+    width: 450px;
+    height: 200px;
+}
+.hireMe>section>div:nth-child(2)>img{
+    width: 300px;
+}
 
 
 
