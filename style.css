@@ -653,6 +653,20 @@ hero>section>div:nth-child(1)>div>a>i{
 .hireMe>section>div:nth-child(2)>div{
     display: flex;
 }
-
+footer{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    background-color: #262B2F;
+}
+footer>nav{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+footer>nav>ul>li>a{
+    color: white;
+}
 
 
