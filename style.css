@@ -668,5 +668,54 @@ footer>nav{
 footer>nav>ul>li>a{
     color: white;
 }
+@media all and (max-width:768px) {
+    header {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    z-index: 1;
+    height: 50px;
+    align-items: center;
+    
+}
+
+nav {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-column: 12;
+
+}
+
+nav>ul {
+    list-style: none;
+    display: none;
+}
+nav>button{
+
+}
+
+nav>ul>li {
+    display: inline;
+    padding: 10px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #262B2F;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: relative;
+
+}
+
+header>img {
+    width: 40px;
+    margin-left: 10px;
+}
+    
+}
 
 
