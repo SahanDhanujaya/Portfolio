@@ -570,21 +570,33 @@ hero>section>div:nth-child(1)>div>a>i{
 #gallery .activity>div>p{
     margin: 50px;
 }
+.hireMe>h1{
+    margin-left: 20%;
+    margin-top: 100px;
+    width: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;   
+}
 .hireMe>section{
+    margin: 50px;
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
 }
 .hireMe>section>div:nth-child(1){
-    border:  2px solid black ;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: fit-content;
     grid-column: 1;
     display: flex;
     justify-content: center;
     
 }
 .hireMe>section>div:nth-child(1)>form{
-    border: 1px solid ;
     height: fit-content;
-    padding: 10px;
+    padding: 15px;
 }
 .hireMe>section>div:nth-child(1)>form input{
     width: 450px;
@@ -594,9 +606,52 @@ hero>section>div:nth-child(1)>div>a>i{
     width: 450px;
     height: 200px;
 }
+.hireMe>section>div:nth-child(1)>form button{
+    width: 100px;
+    height: fit-content;
+    border-radius: 6px;
+    background-color: white;
+}
+.hireMe>section>div:nth-child(1)>form #submit{
+    border: 1px solid rgb(57, 181, 57);
+}
+.hireMe>section>div:nth-child(1)>form #reset{
+    border: 1px solid rgb(181, 57, 57);
+}
 .hireMe>section>div:nth-child(2)>img{
     width: 300px;
 }
-
+.hireMe>section{
+    display: flex;
+    justify-content: center;
+}
+.hireMe>section>div{
+    margin: 10px;
+}
+.hireMe>section>div:nth-child(2)>div>div:nth-child(1){
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+.hireMe>section>div:nth-child(2)>div>div>#whatsapp{
+    color: green;
+    
+}
+.hireMe>section>div:nth-child(2)>div>div>#email{
+    color: rgb(181, 57, 57);
+    
+}
+.hireMe>section>div:nth-child(2)>div>div>#location{
+    color: red;
+    
+}
+.hireMe>section>div:nth-child(2)>div{
+    display: flex;
+}
 
 
