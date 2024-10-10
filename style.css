@@ -265,10 +265,7 @@ hero>section>div>div>a{
     font-style: normal;
 
 }
-#skill{
-    position: static;
 
-}
 #skill>section{
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -834,15 +831,20 @@ hero>section>div:nth-child(1)>div>a>i{
     color: #262B2F;
     
 }
-.aboutMe>section{
+
+#skill>section{
     display: grid;
     grid-template-columns: repeat(9,1fr);
     color: #262B2F;
     text-align: start;
-    grid-column: 5;
+    
+    
 }
-.aboutMe>section>h1{
+#skill>section>h1{
+    margin: 0;
+    margin-top: 20%;
     margin-left: 100px;
+    padding: 0;
     width: 200px;
     font-size: 40px;
     font-weight: bold;
@@ -850,81 +852,43 @@ hero>section>div:nth-child(1)>div>a>i{
     font-optical-sizing: auto;
     font-style: italic;
 
-
+    
 }
-.aboutMe>div{
+#skill>main{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#skill>main>section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-top: 5%;
-}
-.aboutMe img{
-    width: 450px;
-    border-radius: 100%;
-    background-color: #262B2F;
-    grid-column: 1;
-    margin-left: -50px;
-    margin-right: 5px;
-}
-.aboutMe>div>section{
-    grid-column:2;
-
-}
-.aboutMe>div>section>div>h2{
-    color: gray;
-    font-size: 40px;
-    padding: 0;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.aboutMe>div>section>div>h3{
-    color: gray;
-    font-size: 30px;
-    padding: 0;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.aboutMe>div>section>div{
-    width: 500px;
+    grid-gap: 10px 10px;
+    
+      
     
 }
-.aboutMe>div>section>div>p{
-    font-size: 16px;
-    font-weight: bold;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.aboutMe>div>section>div:nth-child(2)>div>#name{
-    display: inline-block;
-    width: 300px;    
-    
-}
-.aboutMe>div>section>div:nth-child(2)>div>#age{
-    display: inline-block;   
-    
-}
-.aboutMe>div>section>div:nth-child(2)>div>#address{
-    display: inline-block;   
-    
-}
-.aboutMe>div>section>div:nth-child(2)>div>label{
-    border: 1px solid;
-    width: 300px;
-    margin-left: 10px;
-}
-.aboutMe>div>section>div:nth-child(2)>div{
-    width: 90%;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 20px;
-    align-content: center;
-    margin-top: 10px;
+#skill>main>section>.card{
+    margin: 10px;
+    box-sizing: content-box;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    color: white;
+    font-size: 13px;
+    background-color: #262B2F;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: 10px 10px 5px gray;
 
+}
+#skill>main>section>.card>div:first-child>img{
+    width: 250px;
+    height: 120px;
 }
     
 }
