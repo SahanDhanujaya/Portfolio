@@ -30,6 +30,17 @@ nav>ul {
     list-style: none;
     
 }
+nav>#menu{
+    width: fit-content;
+    border: none;
+    background-color: white;
+    display: none;
+}
+nav>button>img{
+    width: 30px;
+    height: 30px;
+}
+
 
 nav>ul>li {
     display: inline;
@@ -51,7 +62,7 @@ header>img {
     width: 40px;
     margin-left: 10px;
 }
-nav>button {
+nav>#cv {
     width: 150px;
     height: 25px;
     background-color: lightgreen;
@@ -121,7 +132,7 @@ hero>section>.content>p{
 hero>section>div:nth-child(1)>div>button{
     border: none;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 15px;
     height: 30px;
     width: 100px;
     margin-right: 10px;
@@ -146,6 +157,22 @@ hero>section>div:nth-child(1)>div>a{
 hero>section>div:nth-child(1)>div>a>i{
     color: #262B2F;
     
+}   
+hero>section>div>div>a>img{
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    margin-right: 1px;
+    border: 1px solid;
+    border-radius: 100%;
+}
+
+hero>section>div>div>a{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    
+
 }
 .aboutMe{
     
@@ -668,6 +695,8 @@ footer>nav{
 footer>nav>ul>li>a{
     color: white;
 }
+
+/*Tablet size*/
 @media all and (max-width:768px) {
     header {
     display: grid;
@@ -691,8 +720,8 @@ nav>ul {
     list-style: none;
     display: none;
 }
-nav>button{
-
+nav>#menu{
+    display: inline;
 }
 
 nav>ul>li {
@@ -714,6 +743,96 @@ nav>ul>li>a {
 header>img {
     width: 40px;
     margin-left: 10px;
+}
+hero{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(4,1fr);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+}
+hero>section:nth-child(1){
+    margin-top: 80px;
+    grid-column: 2/9;
+    grid-row: 1/4;
+    z-index: 2;
+    margin-left: 20px;
+}
+.myPicture{
+    width: 600px;
+    height: 415px;
+    border-radius: 100%;
+    grid-column: 8/9;
+    grid-row: 1/4;
+    margin-top: 40px;
+    margin-left:80px ;
+    z-index: 1;
+}
+.myPicture>img{
+    width:500px;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    border-radius: 100%;
+    background-color: #262B2F;
+    box-shadow: 3px  4px 11px  10px rgb(200, 200, 200);
+       
+}
+hero>section>.content>h1{
+    margin: 0;
+    font-size: 4rem;
+    color: rgb(180, 180, 180);
+    font-family: "Caveat Brush", cursive;
+    font-weight: 800;
+    font-style: normal;
+
+}
+hero>section>.content>h3{
+    margin: 0;
+    font-size: 35px;
+}
+hero>section>.content>h4{
+    margin: 0;
+    font-size:30px;
+    color: #99AEF5;
+    text-shadow: 3px 3px 4px rgb(83, 83, 83) ;
+}
+hero>section>.content>p{
+    margin: 0;
+    font-size: 16px;
+    color: #262B2F;
+    
+
+}
+hero>section>div:nth-child(1)>div>button{
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    margin-right: 10px;
+}
+hero>section>div:nth-child(1)>div>button:nth-child(1){
+    background-color: #262B2F;
+    color: white;
+    
+}
+hero>section>.content>p>a{
+    color: #262B2F;
+}
+hero>section>div:nth-child(1)>div>button:nth-child(2){
+    border:2px solid #262B2F;
+    background: white;
+    color: #262B2F;
+    
+}
+hero>section>div:nth-child(1)>div>a{
+    height: 100px;
+}
+hero>section>div:nth-child(1)>div>a>i{
+    color: #262B2F;
+    
 }
     
 }
