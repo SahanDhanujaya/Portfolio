@@ -1101,6 +1101,142 @@ hero>section>div:nth-child(1)>div>a>i{
     height: 25px;
 
 }
+#project>section:first-child{
+    display: grid;
+    grid-template-columns: 3;
+    margin-top: 100px;
+}
+#project>section:first-child>h1{
+    grid-column: 3;  
+    margin-left: 50%;  
+    width: 200px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+#project>section:nth-child(2){
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#project>section:nth-child(2)>div{
+    scale: 0.7;
+    margin: -30px;
+
+}
+#project>section:nth-child(2)>div>img{
+    width: 250px;
+
+}
+#project>section:nth-child(2)>div>div{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#project>section:nth-child(2)>div>div>button{
+    height: 25%;
+    border-radius: 10px;
+    border: solid 2px white;
+    background-color: #262B2F;
+    color: white;
+    padding: 3px;
+}
+#project>.bar{
+    margin-top:-110px ;
+    height: 180px;
+    background-color: #262B2F;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-image: linear-gradient(rgb(36, 36, 36),rgb(255, 255, 255));
+}
+#project>section:nth-child(2)>button{
+    border-radius: 100%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: #262B2F;
+    border-style: none;
+    color: white;
+}
+#project>button{
+    background-color: white;
+    border: 2px solid #262B2F;
+    border-radius: 8px;
+    height: 30px;
+    width: 120px;
+    margin-left: 14%;
+    
+}
+#gallery{
+    margin-top: 100px;
+}
+#gallery>h1{
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+#gallery{
+    align-content: center;
+    
+}
+#gallery>main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+
+
+}
+#gallery>main>section{
+    margin: -20px;
+}
+#gallery>main>.imgSection>div:nth-child(2){
+    margin-top: -35px;
+    margin-left: 10px;
+}
+#gallery>main>.imgSection>div:nth-child(2)>button{
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: gray;
+    color: white;
+    border-radius: 100%;
+    border-style: none;
+    margin: 3px;
+}
+#gallery>main>.imgSection>div{
+    margin-left: -100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gallery>main>.imgSection>div:nth-child(1)>img{
+    scale: 0.8;
+
+}
+#gallery>main>.imgSection>div:nth-child(1)>#secImg{
+    scale: 0.8;
+}
+#gallery .activity{
+    width: 300px;
+    height: 500px;
+    text-align: end;
+    align-content: center;
+}
+#gallery .activity>div>h3{
+    margin-right: 50px;
+    
+}
+#gallery .activity>div>p{
+    margin: 50px;
+}
 
     
 }
