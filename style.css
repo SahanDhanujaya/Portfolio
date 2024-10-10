@@ -175,7 +175,7 @@ hero>section>div>div>a{
 
 }
 .aboutMe{
-    
+    padding: 100px;
 }
 
 .aboutMe>section{
@@ -198,19 +198,26 @@ hero>section>div>div>a{
 }
 .aboutMe>div{
     display: grid;
-    grid-template-columns: repeat(9,1fr);
-    margin-top: 5%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin:5%;
 }
 .aboutMe img{
     width: 600px;
     border-radius: 100%;
     background-color: #262B2F;
-    grid-column: 1/5;
-    grid-row: 2/3;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top:50px;
+    box-shadow : 3px  4px 11px  10px rgb(200, 200, 200);
 }
 .aboutMe>div>section{
-    grid-column:5/10;
-    grid-row: 2/3;
+    grid-column:2;
+    grid-row: 1;
+}
+.aboutMe>div>section>div:nth-child(1){
+    margin-left: 20px;
+    align-items: center;
 }
 .aboutMe>div>section>div>h2{
     color: gray;
@@ -235,23 +242,34 @@ hero>section>div>div>a{
     font-weight: 400;
     font-style: normal;
 }
-.aboutMe>div>section>div:nth-child(2)>div>#name{
+.aboutMe>div> #label>div>div>.labelName{
     display: inline-block;
-    width: 300px;    
+    width: 100px;
+    margin-left: 10px;    
+    font-weight: bold;
     
 }
-.aboutMe>div>section>div:nth-child(2)>div>#age{
-    display: inline-block;   
+.aboutMe>div> #label>div>div .content{
+    width: 150px;
+    display: inline-block;
+}
+
+.aboutMe>div #label{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 150px;
+    font-family: "Inter", sans-serif;
     
 }
-.aboutMe>div>section>div:nth-child(2)>div>#address{
-    display: inline-block;   
+.aboutMe>div #label>div>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 30px;
+    width: 400px;
+    height: 50px;
+    align-content: center;
+    margin-top: 10px;
     
-}
-.aboutMe>div>section>div:nth-child(2)>div>label{
-    border: 1px solid;
-    width: 300px;
-    margin-left: 10px;
+
 }
 .aboutMe>div>section>div:nth-child(2)>div{
     width: 90%;
@@ -736,6 +754,9 @@ nav>ul>li>a {
     position: relative;
 
 }
+nav>#cv {
+    margin-right: 10px;
+}
 
 header>img {
     width: 40px;
@@ -744,7 +765,7 @@ header>img {
 hero{
     display: grid;
     grid-template-columns: repeat(9,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -764,7 +785,7 @@ hero>section:nth-child(1){
     grid-column: 8/9;
     grid-row: 1/4;
     margin-top: 40px;
-    margin-left:80px ;
+    margin-left:20px ;
     z-index: 1;
 }
 .myPicture>img{
@@ -831,7 +852,118 @@ hero>section>div:nth-child(1)>div>a>i{
     color: #262B2F;
     
 }
+.aboutMe{
+    
+    padding: 100px;
+}
 
+.aboutMe>section{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    color: #262B2F;
+    text-align: start;
+    grid-column: 5;
+}
+.aboutMe>section>h1{
+    margin-left: -80px;
+    width: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    scale: 0.9;
+
+
+}
+.aboutMe>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin:5%;
+}
+.aboutMe img{
+    width: 400px;
+    border-radius: 100%;
+    background-color: #262B2F;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top:100px;
+    margin-left: -200px;
+    box-shadow : 3px  4px 11px  10px rgb(200, 200, 200);
+}
+.aboutMe>div>section{
+    grid-column:2;
+    grid-row: 1;
+}
+.aboutMe>div>section>div:nth-child(1){
+    margin-left: 20px;
+    align-items: center;
+}
+.aboutMe>div>section>div>h2{
+    color: gray;
+    font-size: 50px;
+    padding: 0;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.aboutMe>div>section>div>h3{
+    color: gray;
+    font-size: 40px;
+    padding: 0;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.aboutMe>div>section>div>p{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.aboutMe>div> #label>div>div>.labelName{
+    display: inline-block;
+    width: 100px;
+    margin-left: 10px;    
+    font-weight: bold;
+    
+}
+.aboutMe>div> #label>div>div .content{
+    width: 150px;
+    display: inline-block;
+}
+
+.aboutMe>div #label{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 150px;
+    font-family: "Inter", sans-serif;
+    
+}
+.aboutMe>div #label>div>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 30px;
+    width: 390px;
+    height: 50px;
+    align-content: center;
+    margin-top: 10px;
+    
+
+}
+.aboutMe>div>section>div:nth-child(2)>div{
+    width: 90%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    align-content: center;
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
 #skill>section{
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -890,6 +1022,86 @@ hero>section>div:nth-child(1)>div>a>i{
     width: 250px;
     height: 120px;
 }
+#assignment>h1{
+    scale:0.8;
+    
+}
+#assignment>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+#assignment>section>.card{
+    width: 200px;
+    height: 250px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    background-color: #262B2F;
+    border-radius: 10px;
+    margin: -15px;
+    
+}
+#assignment>section>.card>img{
+    width: 200px;
+    height: 130px;
+    
+}
+#assignment>section>#card1{
+    scale: 0.8;
+    z-index: 2;
+}
+#assignment>section>#card2{
+    scale: 0.8;
+    z-index: 1;
+}
+#assignment>section>#card3{
+    scale: 0.8;
+}
+#assignment>section>#card2>img{
+    width: 300px;
+    height: 180px;
+}
+#assignment>section>button{
+    border-radius: 100%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: #262B2F;
+    border-style: none;
+}
+#assignment>section>button>i{
+    color: white;
+}
+#assignment>section>.card>.btn{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#assignment>section>.card>div>button{
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #262B2F;
+    color: white;
+    width: 50%;
+    height: 40%;
+    font-size: 12px;
+}
+#assignment>section>#card2>div>button{
+    margin-top: 35%;
+}
+#assignment>button{
+    margin-top: 50px;
+    margin-left: 40px;
+    border-radius: 10px ;
+    background-color:white;
+    border:2px solid #262B2F;
+    width: 130px;
+    height: 25px;
+
+}
+
     
 }
 
