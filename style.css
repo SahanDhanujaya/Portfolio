@@ -308,6 +308,7 @@ hero>section>div>div>a {
 
 .aboutMe {
     padding: 100px;
+    /* background-color: rgba(0, 0, 0, 0.228); */
 }
 
 .aboutMe>section {
@@ -1084,7 +1085,7 @@ footer>nav>ul>li>a {
     }
 
     .aboutMe {
-
+        
         padding: 100px;
     }
 
@@ -1812,5 +1813,19 @@ footer>nav>ul>li>a {
     hero>section>div:nth-child(1)>div>a>i {
         color: #262B2F;
 
+    }
+    #mobileAbout>div{
+        background-color: #262B2F;
+        width: 450px;
+    }
+    #mobileAbout>div>section{
+        margin-top: 100px;
+        width: 300px;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+    #aboutMe{
+        display: none;
     }
 }
