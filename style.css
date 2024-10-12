@@ -1648,7 +1648,7 @@ footer>nav>ul>li>a {
 
 }
 
-@media all and (max-width:450px){
+@media all and (max-width:375px){
     #header{
         display: none;
     }
