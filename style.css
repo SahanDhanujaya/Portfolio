@@ -197,6 +197,7 @@ hero>section>div>div>a {
 }
 /* mobile hero */
 #mobileHero{
+    margin-top: 10px;
     display: none;
 }
 #mobileHero>header{
@@ -1646,7 +1647,16 @@ footer>nav>ul>li>a {
 
 }
 
-@media all and (max-width:425px) {
+@media all and (max-width:450px){
+    #header{
+        display: none;
+    }
+    #hero{
+        display: none;
+    }
+    #mobileHero{
+        display: block;
+    }
     header {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
