@@ -25,15 +25,16 @@
 <body>
     <!-- Header section -->
     <header>
+        <h2>Welcome</h2>
         <img src="assets/icon/image.png" alt="My Logo">
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#hireMe">Contact</a></li>
             </ul>
             <button id="menu">
                 <img src="assets/icon/icons8-menu-48.png" alt="menu_icon">
@@ -42,7 +43,7 @@
         </nav>
     </header>
     <!--hero section-->
-    <hero>
+    <hero id="hero">
         <section>
             <!--small introduction-->
             <div class="content">
@@ -69,8 +70,44 @@
             <img src="assets/img/freepik-export-202407250258128R4p.png" alt="My picture">
         </section>
     </hero>
+    <!-- mobile hero -->
+    <main id="mobileHero">
+        <!-- header section -->
+        <header>
+            <h1>Welcome</h1>
+            <div>
+                <img src="/assets/icon/Untitled design.png" alt="myLogo">
+                <button type="menu"><img src="assets/icon/icons8-menu-48.png" alt="menuLogo"></button>
+            </div>
+        </header>
+        <!-- introduction -->
+        <hero>
+            <div>
+                <h1>I'm Sahan Dhanujaya, </h1>
+                <h2>A Professional Software Engineer.</h2>
+                <p>I specialize in creating impactfull digital solutions. 
+                    sahandanujaya48@gmail.com</p>
+            </div>
+            <div>
+                <img src="assets/img/freepik-export-202407250258128R4p.png" alt="myPicture">
+            </div>
+        </hero>
+        <!-- contact info -->
+        <div>
+            <button>Hire Me</button>
+            <button>Contact Me</button>
+        </div>
+        <!-- contact shortcut -->
+        <div id="contact">
+            <a href=""><img src="assets/icon/icons8-github-32.png" alt="githubLogo"></a>
+            <a href=""><img src="assets/icon/icons8-whatsapp-50.png" alt="githubLogo"></a>
+            <a href=""><img src="assets/icon/icons8-twitter-30.png" alt="githubLogo"></a>
+            <a href=""><img src="assets/icon/icons8-linkedin-50.png" alt="githubLogo"></a>
+        </div>
+    </main>
+
     <!--about me-->
-    <main class="aboutMe">
+    <main class="aboutMe" id="aboutMe">
         <section>
             <h1>About Me</h1>
         </section>
@@ -106,13 +143,14 @@
                     </div>
                     <div>
                         <label class="labelName" for="email">Email</label>
-                        <a class="content" id="email" href="mailto:sahandanujaya48@gmail.com">sahandhanujaya48@gmail.com</a>
+                        <a class="content" id="email"
+                            href="mailto:sahandanujaya48@gmail.com">sahandhanujaya48@gmail.com</a>
                     </div>
                     <div>
                         <label class="labelName" for="contact">Contact</label>
                         <a class="content" id="contact" href="tel:0756519837">0756519837</a>
                     </div>
-                     <!--contact shortcut-->
+                    <!--contact shortcut-->
                     <div>
                         <a href=""><i class="fa-solid fa-phone"></i></a>
                         <a href=""><i class="fa-solid fa-envelope"></i></a>
@@ -379,7 +417,7 @@
         </main>
     </main>
     <!--hire me section-->
-    <main class="hireMe">
+    <main class="hireMe" id="hireMe">
         <h1>Hire Me</h1>
         <section>
             <!--email section-->
@@ -396,38 +434,43 @@
                 </form>
             </div>
             <!--contact information-->
-            <div>
-                <img src="assets/img/img_16.png" alt="my picture" title="Sahan Dhanujaya">
-                <!--whatsapp-->
-                <div>
+            <div id="contact">
+                <section>
+                    <img src="assets/img/img_16.png" alt="my picture" title="Sahan Dhanujaya">
+                </section>
+                <section>
                     <div>
-                        <i id="whatsapp" class="fa-brands fa-whatsapp"></i>
+
+                        <div>
+                            <i id="whatsapp" class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>Whatsapp</h4>
+                            <p>(+94756519837)</p>
+                        </div>
                     </div>
+
+                    <!--email-->
                     <div>
-                        <h4>Whatsapp</h4>
-                        <p>(+94756519837)</p>
+                        <div>
+                            <i id="email" class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:sahandanujaya48@gmail.com">sahandanujaya48@gmail.com</a>
+                        </div>
                     </div>
-                </div>
-                <!--email-->
-                <div>
+                    <!--location-->
                     <div>
-                        <i id="email" class="fa-solid fa-envelope"></i>
+                        <div>
+                            <i id="location" class="fa-solid fa-map-location"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>116/1,Morahenagama,Hatton</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4>Email</h4>
-                        <a href="mailto:sahandanujaya48@gmail.com">sahandanujaya48@gmail.com</a>
-                    </div>
-                </div>
-                <!--location-->
-                <div>
-                    <div>
-                        <i id="location" class="fa-solid fa-map-location"></i>
-                    </div>
-                    <div>
-                        <h4>Location</h4>
-                        <p>116/1,Morahenagama,Hatton</p>
-                    </div>
-                </div>
+                </section>
             </div>
         </section>
     </main>
